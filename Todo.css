@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Heading {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-button-container{
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 0;
+    width: 300px;
+    font-style: italic;
+    height: 40px;
+}
+.button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background: green;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: none;
+}
+#list-container {
+    list-style: none;  
+    padding-left: 0;
+    margin-top: 20px;
+    width: 100%;  
+}
+
+ul li {
+    text-align: center;
+    background-color: #edeef0;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    width: 300px; 
+    box-sizing: border-box;
+    position: relative;
+}
+ul li::before{
+   content: '';
+   position: absolute;
+   height: 28px;
+   width: 28px;
+   border-radius: 50%;
+   background-image:url(images/unchecked-removebg-preview.png);
+   background-size: cover;
+   background-position: center;
+   top: 12px;
+   left: 8px;
+}
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image:url(images/greenwithbg-removebg-preview.png);
+    height: 32px;
+    width: 30px;
+    position: absolute;
+    
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
